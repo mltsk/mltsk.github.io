@@ -1,0 +1,20 @@
+.header__wrapper {
+    margin: 0 auto;
+    min-height: 450px;
+}
+
+@media (min-width: $mobile-width) and (max-width: $table-width) {
+    .header__wrapper {
+        width: 320px;        
+    }
+    
+}
+
+@media (min-width: $table-width) and (max-width: $desktop-width) {
+    .header__wrapper {
+        width: 660px;        
+    }
+    
+}
+
+

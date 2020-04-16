@@ -1,0 +1,66 @@
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    outline: none;
+  }
+
+.button {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    box-sizing: border-box;
+
+    border: 3px solid #fff;
+    border-radius: 30px;
+
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 16px;
+
+    &:hover {
+        background-color: #fff;
+        color: #d22856;
+    }
+
+    &:active {
+        color: rgba($color: #d22856, $alpha: 0.3);
+    }
+}
+
+@media (min-width: $mobile-width) and (max-width: $table-width) {
+    .container {
+        margin: 0 auto;
+        width: 280px;
+        padding: 0 20px;
+    }
+    
+}
+
+@media (min-width: $table-width) and (max-width: $desktop-width) {
+    .container {
+        margin: 0 auto;
+        width: 640px;
+        padding: 0 10px;
+    }
+    
+}
+
+
+
+@media (min-width: $desktop-width) { 
+    .container {
+        margin: 0 auto;
+        width: 940px;
+        padding: 0 10px;
+    }
+}
