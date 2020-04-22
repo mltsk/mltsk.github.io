@@ -164,7 +164,11 @@
             border-color: #283645;
             opacity: 0.5;
         }
-    }           
+    }
+    
+    .reviews__button--not-hover:hover { 
+        border-color: #bec2c7;
+    }
 
     .reviews__button--back {
         transform: rotate(-45deg);

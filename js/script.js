@@ -73,3 +73,59 @@ sliderTableButtons[2].onclick = function() {
     sliderTableButtons[1].classList.remove('slider__toggle--current');
     sliderTableButtons[0].classList.remove('slider__toggle--current');
 }
+
+
+// слайдер отзывы для пк
+
+let buttonBack = document.querySelector('.reviews__button--back'),
+    buttonNext = document.querySelector('.reviews__button--next');
+    let left = +slides.style.left;
+
+    if (left == 0) {
+        buttonBack.style.opacity = '0.4';
+        buttonBack.style.cursor = 'default';
+        buttonBack.classList.add('reviews__button--not-hover');
+    }
+
+    reviews.addEventListener('click', function(event) {
+        let target = event.target;
+
+        if (target && target == buttonNext && left > -1920) {
+            left = left - 960;
+            console.log(left);
+            slides.style.left = left + 'px';
+        }
+
+        if (target && target == buttonBack && left < 0) {
+            left = left + 960;
+            console.log(left);
+            slides.style.left = left + 'px';
+            buttonNext.style.opacity = '0.4';
+        }
+
+        if (left == 0) {
+            buttonBack.style.opacity = '0.4';
+            buttonBack.style.cursor = 'default';
+            buttonNext.style.opacity = '1';
+            buttonBack.classList.add('reviews__button--not-hover');
+        }
+
+        
+        if (left == -960) {
+            buttonBack.style.opacity = '1';
+            buttonNext.style.opacity = '1';
+            buttonBack.classList.remove('reviews__button--not-hover');
+            buttonNext.classList.remove('reviews__button--not-hover');
+            buttonBack.style.cursor = 'pointer';
+            buttonNext.style.cursor = 'pointer';
+        }
+
+        if (left == -1920) {
+            buttonNext.style.opacity = '0.4';
+            buttonNext.style.cursor = 'default';
+            buttonBack.style.opacity = '1';
+            buttonNext.classList.add('reviews__button--not-hover');
+        }
+    
+
+    })

@@ -113,7 +113,7 @@
     margin-top: 40px;
 }
 
-@media (min-width: $mobile-width) and (max-width: $table-width) { 
+@media (min-width: $mobile-width) and (max-width: 659px) { 
 
     .price__data:first-of-type {
         position: absolute;
