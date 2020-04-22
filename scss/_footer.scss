@@ -1,3 +1,116 @@
 .page-footer {
     display: none;
 }
+
+@media (min-width: $table-width) {  
+    .page-footer {
+        display: flex;
+        padding-top: 36px;
+        padding-bottom: 30px;
+    }
+
+    .page-footer__logo {
+       margin-left: 5px; 
+    }
+
+    .page-footer__social {
+        margin: 0;
+        padding: 0;
+        margin-left: 75px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 177px;
+    }
+
+    .social-item {
+        width: 51px;
+        height: 51px;
+        box-sizing: border-box;
+        border: 3px solid #e9ebec;
+        border-radius: 50%;
+
+        background-repeat: no-repeat;
+        background-position: center;
+
+        cursor: pointer;
+
+        &:hover {
+            border: 3px solid #283645;
+        }
+        &:active {
+            border: 3px solid #283645;
+            opacity: 0.1;
+        }
+    }
+
+    .social-item__twitter {
+        background-image: url('../svg/twitter.svg');
+        background-size: 18px 14px;
+    }
+
+    .social-item__facebook {
+        background-image: url('../svg/facebook.svg');
+        background-size: 9px 18px;
+    }
+    
+    .social-item__youtube {
+        background-image: url('../svg/youtube.svg');
+        background-size: 15px 13px;
+    }
+
+    .page-footer__copyright {
+        margin: 0;
+        padding: 0;
+        margin-left: auto;
+        width: 128px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 13px;
+        margin-top: 5px;
+    }
+    .page-footer__copyright svg{ 
+        fill: #d22856;
+        &:hover {
+            fill: #283645;
+        }
+        &:active {
+            fill: #bec2c7;
+        }
+
+    }
+
+    .copyright__developed {
+        font-size: 14px;
+        color: #283645;
+    }
+
+}
+
+@media (min-width: $desktop-width) {  
+    .page-footer {
+        padding-top: 65px;
+        padding-bottom: 70px;
+    }
+
+    .page-footer__logo {
+        margin-left: 0px; 
+     }
+
+     .page-footer__social {
+        margin-left: 235px;
+        margin-top: 5px;
+    }
+
+    .page-footer__copyright { 
+        margin-right: 0;
+        margin-top: 10px;
+        width: 150px;
+    }
+
+    .copyright__developed {
+        font-size: 18px;
+    }
+
+}
