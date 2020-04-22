@@ -72,8 +72,7 @@
     .reviews__item {
         display: flex;
         flex-direction: column; 
-        width: 625px;
-        margin-right: 20px;
+        width: 640px;
     }
 
     .reviews__wrapper--first {
@@ -81,11 +80,11 @@
     }
     
     .reviews__wrapper--second {
-        left: -645px;
+        left: -640px;
     }
     
     .reviews__wrapper--third {
-        left: -1290px;
+        left: -1280px;
     }
 
     .reviews__author-name {
@@ -121,12 +120,15 @@
     background-repeat: no-repeat;
     background-size: 79px 63px;
     background-position: center 70px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 960px;
     }
 
     .reviews__item {
         box-sizing: border-box;
-        width: 940px;
-        padding: 0 120px;
+        width: 960px;
+        padding: 0px 120px;
     }
 
     .reviews__wrapper--second {

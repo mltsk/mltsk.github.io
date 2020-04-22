@@ -19,24 +19,21 @@ let slides = document.querySelector('.reviews__wrapper');
 
 
 sliderButtons[0].onclick = function() {
-    slides.classList.remove('reviews__wrapper--second');
-    slides.classList.remove('reviews__wrapper--third');
+    slides.style.left = '0%';
     sliderButtons[0].classList.add('slider__toggle--current');
     sliderButtons[1].classList.remove('slider__toggle--current');
     sliderButtons[2].classList.remove('slider__toggle--current');
 }
 
 sliderButtons[1].onclick = function() {
-    slides.classList.add('reviews__wrapper--second');
-    slides.classList.remove('reviews__wrapper--third');
+    slides.style.left = '-100%';
     sliderButtons[1].classList.add('slider__toggle--current');
     sliderButtons[0].classList.remove('slider__toggle--current');
     sliderButtons[2].classList.remove('slider__toggle--current');
 }
 
 sliderButtons[2].onclick = function() {
-    slides.classList.add('reviews__wrapper--third');
-    slides.classList.remove('reviews__wrapper--second');
+    slides.style.left = '-200%';
     sliderButtons[2].classList.add('slider__toggle--current');
     sliderButtons[1].classList.remove('slider__toggle--current');
     sliderButtons[0].classList.remove('slider__toggle--current');
@@ -90,16 +87,16 @@ let buttonBack = document.querySelector('.reviews__button--back'),
     reviews.addEventListener('click', function(event) {
         let target = event.target;
 
-        if (target && target == buttonNext && left > -1920) {
-            left = left - 960;
+        if (target && target == buttonNext && left > -200) {
+            left = left - 100;
             console.log(left);
-            slides.style.left = left + 'px';
+            slides.style.left = left + '%';
         }
 
         if (target && target == buttonBack && left < 0) {
-            left = left + 960;
+            left = left + 100;
             console.log(left);
-            slides.style.left = left + 'px';
+            slides.style.left = left + '%';
             buttonNext.style.opacity = '0.4';
         }
 
@@ -109,9 +106,9 @@ let buttonBack = document.querySelector('.reviews__button--back'),
             buttonNext.style.opacity = '1';
             buttonBack.classList.add('reviews__button--not-hover');
         }
-
         
-        if (left == -960) {
+        
+        if (left == -100) {
             buttonBack.style.opacity = '1';
             buttonNext.style.opacity = '1';
             buttonBack.classList.remove('reviews__button--not-hover');
@@ -120,7 +117,7 @@ let buttonBack = document.querySelector('.reviews__button--back'),
             buttonNext.style.cursor = 'pointer';
         }
 
-        if (left == -1920) {
+        if (left == -200) {
             buttonNext.style.opacity = '0.4';
             buttonNext.style.cursor = 'default';
             buttonBack.style.opacity = '1';
