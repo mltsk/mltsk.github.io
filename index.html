@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <title>Pink - Главная</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <header class="page-header header">
@@ -13,16 +13,15 @@
             <nav class="main-nav main-nav--close">
                 <div class="main-nav__wrapper">
                     <a class="main-nav__logo logo">
-                        <svg class="main-nav__logo--mobile">
-                            <use xlink:href="svg/sprite.svg#logo-mobile"></use>
+                        <svg role="img" width="74.426px" height="22.859px" class="main-nav__logo--mobile">
+                            <use xlink:href="./svg/sprite.svg#logo-mobile"></use>
                         </svg>
-                        <svg class="main-nav__logo--table">
-                            <use xlink:href="svg/sprite.svg#logo-table"></use>
+                        <svg role="img" width="146.3px" height="40.375px" class="main-nav__logo--table">
+                            <use xlink:href="./svg/sprite.svg#logo-table"></use>
                         </svg>
-                        <svg class="main-nav__logo--desktop">
-                            <use xlink:href="svg/sprite.svg#logo-desktop"></use>
+                        <svg role="img" width="148" height="40" class="main-nav__logo--desktop">
+                            <use xlink:href="./svg/sprite.svg#logo-desktop"></use>
                         </svg>
-                        <!-- <img class="main-nav__logo-image" width="75" height="22" src="img/logotype-white-mobile.png" alt="Логотип сайта PINK"> -->
                     </a>
                     <ul class="main-nav__list">
                         <li class="main-nav__item"><a>Главная</a></li>
@@ -34,8 +33,8 @@
                 </div>
             </nav>
             <section class="application">
-                <div class="container">
-                    <div class="application__wrapper">
+                <div class="application__container container">
+                    <div class="application__wrapper ">
                         <h2 class="visually-hidden">Скачать мобильное приложение</h2>
                         <b class="application__slogan">Взгляните <br> на жизнь<br> иначе!</b>
                         <a class="application__button button" href="https://appstore.com">Скачать приложение</a>
@@ -186,22 +185,22 @@
             <b class="contacts__slogan">Остались вопросы?<br> Свяжитесь с нами!</b>
             <ul class="contacts__list">
                 <li class="contacts__item contacts__item--phone">
-                    <p class="contacts__up">Звоните:</span>
-                    <p class="contacts__down">+7 (812) 555-66-66</span>
+                    <p class="contacts__up">Звоните:</p>
+                    <a class="contacts__down" href="tel:+78125556666">+7 (812) 555-66-66</a>
                 </li>
                 <li class="contacts__item contacts__item--mail">
-                    <p class="contacts__up">Пишите:</span>
-                    <p class="contacts__down contacts__down--mail">mail@htmlacademy.ru</span>
+                    <p class="contacts__up">Пишите:</p>
+                    <a class="contacts__down contacts__down--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                 </li>
                 <li class="contacts__item contacts__item--address">
-                    <p class="contacts__up">Приезжайте в гости:</span>
-                    <p class="contacts__down contacts__down--address">ул. Большая<br> Конюшенная, 19/8</span>
+                    <p class="contacts__up">Приезжайте в гости:</p>
+                    <a class="contacts__down contacts__down--address" href="https://goo.gl/maps/8jLFQmu1EFBL74Gn9" >ул. Большая<br> Конюшенная, 19/8</a>
                 </li>
             </ul>
         </section>
         <div class="map">
             <div class="map__wrapper">
-                <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1941.820983275665!2d30.32085304005045!3d59.936777147401344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1587022091663!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003128!2d30.32085871610071!3d59.93871916905414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1588084866859!5m2!1sru!2sru"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
     </main>
@@ -226,7 +225,10 @@
         </p>
     </footer>
     <script src="js/script.js"></script>
-    <script src="https://jonneal.dev/svg4everybody/svg4everybody.min.js"></script>
-    <script>svg4everybody();</script>
+    <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>
+        svg4everybody();
+    </script>
 </body>
 </html>
