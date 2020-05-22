@@ -18,7 +18,7 @@ let city = [];
 
 //Функции 
 
-const getData = (url, callback, reject = console.log()) => {
+const getData = (url, callback, reject) => {
     const request = new XMLHttpRequest();
 
     request.open('GET', url);
@@ -29,7 +29,7 @@ const getData = (url, callback, reject = console.log()) => {
         if(request.status === 200) {
             callback(request.response);
         }  else {
-            reject(request.status);
+            console.log(request.status);
         }
     });
 
