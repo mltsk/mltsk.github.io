@@ -18,7 +18,7 @@ let city = [];
 
 //Функции 
 
-const getData = (url, callback, reject = console.error) => {
+const getData = (url, callback, reject) => {
     const request = new XMLHttpRequest();
 
     request.open('GET', url);
@@ -53,7 +53,6 @@ const showCity = (input, list) => {
             li.tabIndex = 0;
             li.textContent = item.name;
             list.append(li);
-            // console.log(li);
         });
     }
 };
@@ -167,8 +166,6 @@ const renderCheapYear = (cheapTickets) => {
         otherCheapTickets.append(ticket);
 
     }
-
-    console.log('cheapTickets: ', cheapTickets);
 };
 
 const renderCheap = (data, date) => {
@@ -242,6 +239,5 @@ getData(citiesApi, (data) => {
           }
           return 0;
     })
-    console.log('city: ', city);
 });
 
