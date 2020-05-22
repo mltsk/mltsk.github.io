@@ -8,7 +8,7 @@ const fromSearch = document.querySelector('.form-search'),
     otherCheapTickets = document.querySelector('#other-cheap-tickets');
 
 //data
-const citiesApi = 'database/cities.json',
+const citiesApi = 'https://raw.githubusercontent.com/mltsk/aviasales/master/dataBase/cities.json',
     proxy = 'https://cors-anywhere.herokuapp.com/',
     API_KEY = 'e208abad79268c549ec706edc1bb940c',
     calendar = 'http://min-prices.aviasales.ru/calendar_preload',
