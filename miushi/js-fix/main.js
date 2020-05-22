@@ -189,13 +189,13 @@ document.addEventListener("DOMContentLoaded", function () {
       var priceData = price.dataset.price;
 
       if (target == element.querySelector('.food-section__price-btn--plus')) {
-        input.value++;
-        price.textContent = abc2(priceData * input.value);
+        input.textContent++;
+        price.textContent = abc2(priceData * input.textContent);
       }
 
-      if (target == element.querySelector('.food-section__price-btn--minus') && input.value > 0) {
-        input.value--;
-        price.textContent = abc2(priceData * input.value);
+      if (target == element.querySelector('.food-section__price-btn--minus') && input.textContent > 0) {
+        input.textContent--;
+        price.textContent = abc2(priceData * input.textContent);
       }
     }
   }; //Для вока
@@ -219,13 +219,13 @@ document.addEventListener("DOMContentLoaded", function () {
       var wokPrice = element.querySelector('.food-section__add-right-price');
 
       if (target == element.querySelector('.food-section__price-btn--plus')) {
-        input.value++;
-        price.textContent = abc2(priceData * input.value + +wokPrice.textContent);
+        input.textContent++;
+        price.textContent = abc2(priceData * input.textContent + +wokPrice.textContent);
       }
 
-      if (target == element.querySelector('.food-section__price-btn--minus') && input.value > 0) {
-        input.value--;
-        price.textContent = abc2(priceData * input.value + +wokPrice.textContent);
+      if (target == element.querySelector('.food-section__price-btn--minus') && input.textContent > 0) {
+        input.textContent--;
+        price.textContent = abc2(priceData * input.textContent + +wokPrice.textContent);
       } //добавление добавок к воку
 
 
@@ -234,20 +234,20 @@ document.addEventListener("DOMContentLoaded", function () {
         var index = selectedArr.selectedIndex;
         console.log(wokPrice.textContent);
         wokPrice.textContent = addQuantity.textContent * selectedArr[index].dataset.price;
-        price.textContent = abc2(priceData * input.value + +wokPrice.textContent);
+        price.textContent = abc2(priceData * input.textContent + +wokPrice.textContent);
       } //убираем все добавки у вока
 
 
       if (target == addCrossBtn) {
         addQuantity.textContent = 0;
         wokPrice.textContent = 0;
-        price.textContent = abc2(priceData * input.value + +wokPrice.textContent);
+        price.textContent = abc2(priceData * input.textContent + +wokPrice.textContent);
       }
 
       selected.addEventListener('change', function () {
         addQuantity.textContent = 0;
         wokPrice.textContent = 0;
-        price.textContent = abc2(priceData * input.value + +wokPrice.textContent);
+        price.textContent = abc2(priceData * input.textContent + +wokPrice.textContent);
       });
     };
 
@@ -293,7 +293,7 @@ document.addEventListener("DOMContentLoaded", function () {
       aboutInformation.style.maxHeight = '400px';
       aboutBtn.textContent = "Показать все";
     }
-  }); //футер
+  }); //футер - раскрывающий список
 
   var footerTitle = document.querySelectorAll('.footer__title');
 
