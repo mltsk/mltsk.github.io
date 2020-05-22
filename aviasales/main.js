@@ -30,6 +30,7 @@ const getData = (url, callback, reject = console.log()) => {
             callback(request.response);
         }  else {
             console.log(request.status);
+            alert('В этом направлении нет рейсов');
         }
     });
 
