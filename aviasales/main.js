@@ -11,7 +11,7 @@ const fromSearch = document.querySelector('.form-search'),
 const citiesApi = 'https://raw.githubusercontent.com/mltsk/aviasales/master/dataBase/cities.json',
     proxy = 'https://cors-anywhere.herokuapp.com/',
     API_KEY = 'e208abad79268c549ec706edc1bb940c',
-    calendar = 'http://min-prices.aviasales.ru/calendar_preload',
+    calendar = 'https://min-prices.aviasales.ru/calendar_preload',
     MAX_COUNT = 10;
 
 let city = [];
