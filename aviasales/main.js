@@ -18,7 +18,7 @@ let city = [];
 
 //Функции 
 
-const getData = (url, callback, reject) => {
+const getData = (url, callback, reject = console.log()) => {
     const request = new XMLHttpRequest();
 
     request.open('GET', url);
