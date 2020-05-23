@@ -67,10 +67,7 @@ body {
     background-color: #0d0d0d;
 }
 
-.page {
-    /* display: flex; */
-    /* flex-direction: column; */
-}
+/* Page */
 
 .page__aside {
     flex-grow: 0;
@@ -93,6 +90,8 @@ body {
 .page__main {
     background-color: #05263f;
 }
+
+/* aside */
 
 .aside__photo {
     display: block;
@@ -132,6 +131,21 @@ body {
     background-color: #05263f;
 }
 
+.page__resume {
+    display: none;
+
+    background-color: #05263f;
+    transition: 1s;
+}
+
+/* header */
+
+.header {
+    height: 70px;
+
+    background-color: #061a26;
+}
+
 .header__list {
     display: flex;
     margin: 0;
@@ -139,12 +153,6 @@ body {
     height: 100%;
 
     list-style: none;
-}
-
-.header {
-    height: 70px;
-
-    background-color: #061a26;
 }
 
 .header__item {
@@ -171,6 +179,8 @@ body {
 
     cursor: default;
 }
+
+/* portfolio */
 
 .portfolio {
     padding-top: 25px; 
@@ -242,12 +252,7 @@ body {
     min-width: 120px;
 }
 
-.page__resume {
-    display: none;
-
-    background-color: #05263f;
-    transition: 1s;
-}
+/* resume */
 
 .resume__wrapper {
     padding: 25px;
@@ -276,10 +281,46 @@ body {
     margin-left: 25px;
 }
 
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+.resume__btn {
+    position: relative;
+
+    width: unset;
+    margin-top: 25px;
+    margin-left: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    overflow: hidden;
+    cursor: pointer;
 }
+
+.resume__btn::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: -30px;
+
+    display: block;
+    width: 120px;
+    height: 30px;
+
+    background-color: rgba(256, 256, 256, 0.25);
+
+    transform: rotate(60deg);
+    transform-origin: 10px;
+
+
+    animation-duration: 3s;
+    animation-name: btn;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.resume__btn:hover::before{ 
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* media */
 
 @media(min-width: 650px) {
 
@@ -306,10 +347,6 @@ body {
 }
 
 @media(min-width: 900px) { 
-    
-    .page {
-        /* flex-direction: row; */
-    }
 
     .aside {
         position: fixed;
@@ -349,14 +386,30 @@ body {
     }
 }
 
+/* animation */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
 
 @keyframes fade {
 
-0% {
-    opacity: 0.1;
-}
-100% {
-    opacity: 1;
+    0% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
+@keyframes btn {
+
+    from {
+        left: -80px;
+    }
+
+    to {
+        left: 200px;
+    }
 }
