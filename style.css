@@ -197,6 +197,7 @@ body {
     width: 80%;
     padding-bottom: 25px;
     margin-bottom: 20px;
+    min-height: 1px;
 
     border-radius: 12px;
     overflow: hidden;
