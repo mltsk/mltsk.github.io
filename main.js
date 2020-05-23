@@ -3,7 +3,7 @@ let headerList = document.querySelector('.header__list');
 let pagePortfolio = document.querySelector('.page__portfolio');
 let pageResume = document.querySelector('.page__resume');
 
-headerItem[0].addEventListener('click', (event) => {
+headerItem[0].addEventListener('click', function (event){
     
     if (headerItem[0].classList.contains('header__item--active')){
 
@@ -15,7 +15,7 @@ headerItem[0].addEventListener('click', (event) => {
     }
 });
 
-headerItem[1].addEventListener('click', (event) => {
+headerItem[1].addEventListener('click', function (event){
     
     if (headerItem[1].classList.contains('header__item--active')){
 
@@ -26,5 +26,3 @@ headerItem[1].addEventListener('click', (event) => {
         pagePortfolio.style.display = "none";
     }
 }); 
-
-console.log('headerItem: ', headerItem);
