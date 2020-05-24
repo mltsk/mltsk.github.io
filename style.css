@@ -49,6 +49,8 @@ b::selection{
 
     border: 1px solid #fff;
     border-radius: 20px;
+
+    transition: .5s;
 }
 
 .btn:hover { 
@@ -308,7 +310,7 @@ body {
 
     transform: rotate(60deg);
     transform-origin: 10px;
-
+    transition: .5s;
 
     animation-duration: 3s;
     animation-name: btn;
