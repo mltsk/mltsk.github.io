@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="page">
+
+<header class="header" id="header">
+    <nav class="header__nav">
+        <div class="header__nav-wrapper">
+            <a class="header__nav-link" href="#header">Главня</a>
+            <a class="header__nav-link" href="#services">Услуги</a>
+            <a class="header__nav-link" href="#price">Стоимость</a>
+            <a class="header__nav-link" href="#portfolio">Портфолио</a>
+            <a class="header__nav-link" href="#advantages">Преймущества</a>
+            <a class="header__nav-link" href="#process">Процесс</a>
+            <a class="header__nav-link" href="#team">Команда</a>
+            <a class="header__nav-link" href="#blog">Блог</a>
+            <a class="header__nav-link" href="#question">Задать вопрос</a>
+        </div>
+    </nav>
+    <div class="header__wrapper">
+        <div class="header__container container">
+            <div class="header__upper">
+                <div class="header__logo">
+                    <img width="158" height="60" class="header__logo-img" src="img/degree.png" srcset="img/degree@2x.png 2x">
+                </div>
+                <div class="header__phone">
+                    <span class="header__phone-question">Есть вопросы? Звоните!</span>
+                    <a class="header__phone-number" href="tel:88002590936">8 /800/ 259 09 36</a>
+                </div>
+                <button class="header__menu-btn">Меню</button>
+            </div>
+            <section class="header__promo promo">
+                <h2 class="promo__title">Услиги по 3D моделированию <span class="promo__title-span">полный спектр услуг</span></h2>
+                <h3 class="promo__subtitle">Оставьте заявку сейчас и получите дизайн интерьера 25кв2 бесплатно!*</h3>
+                <form class="promo__form" action="">
+                    <div class="promo__input-wrapper promo__input-wrapper--upper">
+                        <div class="promo__input-box">
+                            <input class="promo__input promo__input--first input" type="text" name="name" id="name" placeholder="Ваше имя">
+                            <input class="promo__input promo__input--second input" type="email" name="email" id="email" placeholder="E-mail">
+                            <input class="promo__input promo__input--third input" type="tel" name="phone" id="phone" placeholder="Номер телефона">
+                        </div>
+                    </div>
+                    <div class="promo__input-wrapper promo__input-wrapper--bottom">
+                        <button class="promo__input promo__input-submit button" type="submit">Оставить заявку!</button>
+                    </div>
+                </form>
+                <p class="promo__footer">*Мы гарантируем конфидициальность передаваемых данных</p>
+                <a href="#services" class="promo__mouse">Пролистать вниз</a>
+            </section>
+        </div>
+    </div>
+</header>
+
+<section class="services" id="services">
+    <div class="services__container container">
+        <h2 class="services__title title">Наши услуги</h2>
+        <div class="services__row">
+            <div class="services__info">
+                <h3 class="services__headline">Дизайн интерьера</h3>
+                <p class="services__text">Услуга, направленная на разработку интерьеров помещений с целью обеспечить удобство и эстетически приятное ощущение у человека при нахождении в помещении</p>
+                <button class="services__button button">Оставить заявку</button>
+            </div>
+            <div class="services__img">
+                <img src="img/layer-5.jpg" srcset="img/layer-5@2x.jpg 2x">
+            </div>
+        </div>
+        <div class="services__row services__row--2">
+            <div class="services__img">
+                <img src="img/layer-6.jpg" srcset="img/layer-6@2x.jpg 2x">
+            </div>
+            <div class="services__info">
+                <h3 class="services__headline">Визуализация</h3>
+                <p class="services__text">Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также дизайн самих зданий, позволяющая обеспечить удобство людей при нахождении на территории</p>
+            </div>
+        </div>
+        <div class="services__row">
+            <div class="services__info">
+                <h3 class="services__headline">Визуализация</h3>
+                <p class="services__text">Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также дизайн самих зданий, позволяющая обеспечить удобство людей при нахождении на территории</p>
+            </div>
+            <div class="services__img">
+                <img src="img/layer-7.jpg" srcset="img/layer-7@2x.jpg 2x">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="price" id="price">
+    <div class="price__wrapper">
+        <div class="price__container container">
+            <h2 class="price__title title">Расчитать стоимость</h2>
+            <p class="price__subtitle">Расчитайте предварительную стоимость разработки интерьера</p>
+            <div class="price__box">
+                <div class="price__box-left">
+                    <div class="price__square">
+                        <p class="price__square-title">Площадь помещения:</p>
+                        <div class="price__square-row">
+                            <button class="price__btn price__btn--1" aria-label="100 м.кв." data-square="100"></button>
+                            <button class="price__btn price__btn--2 price__btn--active" aria-label="10 000 м.кв." data-square="10000"></button>
+                            <button class="price__btn price__btn--3" aria-label="250 000 м.кв." data-square="250000"></button>
+                            <button class="price__btn price__btn--4" aria-label="500 000 м.кв." data-square="500000"></button>
+                        </div>
+                    </div>
+                    <div class="price__package">
+                        <p class="price__package-title">Выберите пакет:</p>
+                        <div class="price__package-row">
+                            <button class="price__package-btn price__package-btn--1" data-package="1">Light
+                                <span class="price__package-info price__package-info--1">План расстановки мебели 3D визуализация. Все рабочие чертежи (план полов, план потолка, развертки по стенам, план электросетей)</span>
+                            </button>
+                            
+                            <button class="price__package-btn price__package-btn--2 price__package-btn--active" data-package="1.5">Medium
+                                <span class="price__package-info price__package-info--2">План расстановки мебели 3D визуализация. Все рабочие чертежи (план полов, план потолка, развертки по стенам, план электросетей)</span>
+                            </button>
+                            
+                            <button class="price__package-btn price__package-btn--3" data-package="2">Full
+                                <span class="price__package-info price__package-info--3">План расстановки мебели 3D визуализация. Все рабочие чертежи (план полов, план потолка, развертки по стенам, план электросетей)</span>
+                            </button>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="price__box-right">
+                    <div class="price__table">
+                        <div class="price__head">Площадь помещения:</div>
+                        <div class="price__value">10000м2</div>
+                        <div class="price__head">Средняя стоимость 1000м2:</div>
+                        <div class="price__value">4800 тг.</div>
+                        <div class="price__head">Средняя стоимость объекта:</div>
+                        <div class="price__value">48000 тг.</div>
+                    </div>
+                    <button class="price__button button">Получить консультацию специалиста</button>
+                    <span class="price__phone">или позвоните нам по телефону:</span>
+                    <a class="price__phone-number" href="tel:+77273887177">+ 7 727 388 71 77</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="portfolio container" id="portfolio">
+    <h2 class="portfolio__title title">Портфолио</h2>
+    <ul class="portfolio__menu">
+        <li class="portfolio__menu-item portfolio__menu-item--1">все проекты</li>
+        <li class="portfolio__menu-item portfolio__menu-item--2 portfolio__menu-item--current">экстерьеры</li>
+        <li class="portfolio__menu-item portfolio__menu-item--3">жилые интерьеры</li>
+        <li class="portfolio__menu-item portfolio__menu-item--4">общественные интерьеры</li>
+    </ul>
+    <ul class="portfolio__images">
+        <li class="portfolio__image"><img src="img/layer-11.jpg" srcset="img/layer-11@2x.jpg 2x"></li>
+        <li class="portfolio__image"><img src="img/layer-12.jpg" srcset="img/layer-12@2x.jpg 2x"></li>
+        <li class="portfolio__image"><img src="img/layer-13.jpg" srcset="img/layer-13@2x.jpg 2x"></li>
+        <li class="portfolio__image"><img src="img/layer-14.jpg" srcset="img/layer-14@2x.jpg 2x"></li>
+        <li class="portfolio__image"><img src="img/layer-15.jpg" srcset="img/layer-15@2x.jpg 2x"></li>
+        <li class="portfolio__image"><img src="img/layer-16.jpg" srcset="img/layer-16@2x.jpg 2x"></li>
+    </ul>
+</section>
+
+<section class="advantages container" id="advantages">
+    <h2 class="advantages__title title">Почему мы лучшие?</h2>
+    <ul class="advantages__list">
+        <li class="advantages__item">
+            <img class="advantages__img" src="img/layer-18.png" srcset="img/layer-18@2x.png 2x">
+            <p class="advantages__text">Профессиональные дизайнеры и визуализаторы с зарубежной практикой работы</p>
+        </li>
+        <li class="advantages__item">
+            <img class="advantages__img" src="img/layer-19.png" srcset="img/layer-19@2x.png 2x">
+            <p class="advantages__text">Интеративный подход, работаем до полного согласования с Вами</p>
+        </li>
+        <li class="advantages__item">
+            <img class="advantages__img" src="img/layer-20.png" srcset="img/layer-20@2x.png 2x">
+            <p class="advantages__text">Решаем вопрос закупки, берем авторский надзор на себя (пакет Full)</p>
+        </li>
+        <li class="advantages__item">
+            <img class="advantages__img" src="img/layer-21.png" srcset="img/layer-21@2x.png 2x">
+            <p class="advantages__text">Над проектом работает группа специалистов под началом project менеджера в ERP системе</p>
+        </li>
+        <li class="advantages__item">
+            <img class="advantages__img" src="img/layer-22.png" srcset="img/layer-22@2x.png 2x">
+            <p class="advantages__text">Выполнение раньше установленных сроков</p>
+        </li>
+        <li class="advantages__item">
+            <img class="advantages__img" src="img/layer-23.png" srcset="img/layer-23@2x.png 2x">
+            <p class="advantages__text">Дарим альбом проекта, вместе с 25% скидкой на следующее обращение</p>
+        </li>
+    </ul>
+</section>
+
+<section class="process container" id="process">
+    <h2 class="process__title title">Процесс взаимодействия</h2>
+    <div class="process__row">
+        <div class="process__image">
+            <img class="process__img" src="img/layer-24.jpg" srcset="img/layer-24@2x.jpg 2x">
+        </div>
+        <div class="process__text">Заполнение брифа</div>
+    </div>
+    <div class="process__row">
+        <div class="process__text">Исследование</div>
+        <div class="process__image">
+            <img class="process__img" src="img/layer-25.jpg" srcset="img/layer-25@2x.jpg 2x">
+        </div>
+    </div>
+    <div class="process__row">
+        <div class="process__image">
+            <img class="process__img" src="img/layer-26.jpg" srcset="img/layer-26@2x.jpg 2x">
+        </div>
+        <div class="process__text">Идея</div>
+    </div>
+    <div class="process__row">
+        <div class="process__text">Завершение</div>
+        <div class="process__image">
+            <img class="process__img" src="img/layer-28.jpg" srcset="img/layer-28@2x.jpg 2x">
+        </div>
+    </div>
+</section>
+
+<section class="partners container" id="partners">
+    <h2 class="partners__title title">Нам доверяют более 50 компаний</h2>
+    <ul class="partners__list">
+        <li class="partners__item">
+            <img class="partners__img" src="img/layer-30.png" srcset="img/layer-30@2x.png 2x">
+        </li>
+        <li class="partners__item">
+            <img class="partners__img" src="img/layer-31.png" srcset="img/layer-31@2x.png 2x">
+        </li>
+        <li class="partners__item">
+            <img class="partners__img" src="img/layer-32.png" srcset="img/layer-32@2x.png 2x">
+        </li>
+        <li class="partners__item">
+            <img class="partners__img" src="img/layer-33.png" srcset="img/layer-33@2x.png 2x">
+        </li>
+        <li class="partners__item">
+            <img class="partners__img" src="img/layer-34.png" srcset="img/layer-34@2x.png 2x">
+        </li>
+        <li class="partners__item">
+            <img class="partners__img" src="img/layer-35.png" srcset="img/layer-35@2x.png 2x">
+        </li>
+        <li class="partners__item">
+            <img class="partners__img" src="img/layer-36.png" srcset="img/layer-36@2x.png 2x">
+        </li>
+        <li class="partners__item">
+            <img class="partners__img" src="img/layer-30.png" srcset="img/layer-30@2x.png 2x">
+        </li>
+        <li class="partners__item">
+            <img class="partners__img" src="img/layer-31.png" srcset="img/layer-31@2x.png 2x">
+        </li>
+        <li class="partners__item">
+            <img class="partners__img" src="img/layer-32.png" srcset="img/layer-32@2x.png 2x">
+        </li>
+        <li class="partners__item">
+            <img class="partners__img" src="img/layer-33.png" srcset="img/layer-33@2x.png 2x">
+        </li>
+        <li class="partners__item">
+            <img class="partners__img" src="img/layer-34.png" srcset="img/layer-34@2x.png 2x">
+        </li>
+    </ul>
+</section>
+
+<section class="team container" id="team">
+    <h2 class="team__title title">Наша команда</h2>
+    <ul class="team__list">
+        <li class="team__item">
+            <img class="team__img" src="img/layer-40.jpg" srcset="img/layer-40@2x.jpg 2x">
+            <p class="team__name">Ирина Притыкина</p>
+            <p class="team__position">Директор компании</p>
+        </li>
+        <li class="team__item">
+            <img class="team__img" src="img/layer-42.jpg" srcset="img/layer-42@2x.jpg 2x">
+            <p class="team__name">Игорь Карий</p>
+            <p class="team__position">Финансовый директор</p>
+        </li>
+        <li class="team__item">
+            <img class="team__img" src="img/layer-43.jpg" srcset="img/layer-43@2x.jpg 2x">
+            <p class="team__name">Илья Кондрашин</p>
+            <p class="team__position">Инженер модельер</p>
+        </li>
+        <li class="team__item">
+            <img class="team__img" src="img/layer-41.jpg" srcset="img/layer-41@2x.jpg 2x">
+            <p class="team__name">Маргарита Гордеева</p>
+            <p class="team__position">3D дизайнер</p>
+        </li>
+        <li class="team__item">
+            <img class="team__img" src="img/layer-38.jpg" srcset="img/layer-38@2x.jpg 2x">
+            <p class="team__name">Светлана Коток</p>
+            <p class="team__position">Дизайнер интерьеров</p>
+        </li>
+        <li class="team__item">
+            <img class="team__img" src="img/layer-44.jpg" srcset="img/layer-44@2x.jpg 2x">
+            <p class="team__name">Максим Ковальский</p>
+            <p class="team__position">Дизайнер ландшафтов</p>
+        </li>
+    </ul>
+</section>
+
+<section class="quote container" id="quote">
+    <p class="quote__head">Ты - то, что ты делаешь!</p>
+    <p class="quote__text">То, что мы делаем, определяет то, кем мы являемся. Люди чувствуют старание и чувствуют неаккуратность. Это связано с уважением друг к другу, так что небрежность - это неуважение к самому себе.</p>
+    <p class="quote__author">Ислам Куаныш</p>
+    <p class="quote__position">Директор</p>
+</section>
+
+<section class="blog container" id="blog">
+    <h2 class="blog__title title">Блог</h2>
+    <div class="blog__wrapper">
+        <div class="blog__box">
+            <img class="blog__img" src="img/layer-45.jpg" srcset="img/layer-45@2x.jpg 2x">
+            <a class="blog__link" href="#">Минимализм – это самый простой, практичный и «спорный» стиль в дизайне интерьеров</a>
+        </div>
+        <div class="blog__box">
+            <img class="blog__img" src="img/layer-46.jpg" srcset="img/layer-46@2x.jpg 2x">
+            <a class="blog__link" href="#">Прованс - это спокойный южный регион Франции, с великолепнейшей природой</a>
+        </div>
+    </div>
+</section>
+
+<section class="question" id="question">
+    <div class="question__wrapper">
+        <div class="question__container container">
+            <h2 class="question__title title">Остались вопросы?</h2>
+            <p class="question__subtitle">Задайте их в форме ниже и наши специалисты свяжуться с Вами!</p>
+            <div class="question__box">
+                <form class="question__form" action="">
+                    <div class="question__input-wrapper">
+                        <input class="question__input" type="text" name="name" id="name" placeholder="Ваше имя">
+                        <input class="question__input" type="email" name="email" id="email" placeholder="Ваше e-mail">
+                        <input class="question__input" type="tel" name="phone" id="phone" placeholder="Ваш номер телефона">
+                    </div>
+                    
+                    <textarea class="question__textarea question__textarea" name="textarea" id="textarea" placeholder="Ваше сообщение"></textarea>
+                    <button class="question__button button" type="submit">Оставить заявку!</button>
+                </form>
+                <div class="question__phones">
+                    <ul class="question__phones-list">
+                        <li class="question__phones-item">
+                            <span class="question__icon">
+                                <img class="question__img" src="img/layer-48.png" srcset="img/layer-48@2x.png 2x">
+                            </span>
+                            <a class="question__link" href="tel:+78968766677">+ 7 896 876 66 77</a>
+                        </li>
+                        <li class="question__phones-item">
+                            <span class="question__icon">
+                                <img class="question__img" src="img/whatsapp-logo-vector.png" srcset="img/whatsapp-logo-vector@2x.png 2x">
+                            </span>
+                            <a class="question__link" href="tel:+78968766677">+ 7 896 876 66 77</a>
+                        </li>
+                        <li class="question__phones-item">
+                            <span class="question__icon">
+                                <img class="question__img" src="img/layer-49.png" srcset="img/layer-49@2x.png 2x">
+                            </span>
+                            <a class="question__link" href="mailto:sales@23degree.kz">sales@23degree.kz</a>
+                        </li>
+                        <li class="question__phones-item">
+                            <span class="question__icon">
+                                <img class="question__img" src="img/layer-51.png" srcset="img/layer-51@2x.png 2x">
+                            </span>
+                            <a class="question__link" href="https://skype.com">skype:23degree</a>
+                        </li>
+                        <li class="question__phones-item">
+                            <span class="question__icon">
+                                <img class="question__img" src="img/layer-53.png" srcset="img/layer-53@2x.png 2x">
+                            </span>
+                            <a class="question__link" href="tel:+78968766677">telegram: 23degree</a>
+                        </li>
+                    </ul>
+                    <p class="question__timetable">График работы: с 9-00 до 18-00. Пн.-Пт.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="map" id="map">
+    <h2 class="visually-hidden">Карта</h2>
+    <div class="map__yandex" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/162/almaty/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Алматы</a><a href="https://yandex.ru/maps/162/almaty/search/%D0%B0%D0%BB%D0%BC%D0%B0%D1%82%D1%8B/?ll=76.935622%2C43.239935&sll=76.947959%2C43.238513&sspn=0.009113%2C0.006370&utm_medium=mapframe&utm_source=maps&z=14.08" style="color:#eee;font-size:12px;position:absolute;top:14px;">Алматы — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCQhe6B1sD" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__upper">
+            <div class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Главная</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Тарифы</a></li>
+                </ul>
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Вопросы-ответы</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Личный кабинет</a></li>
+                </ul>
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Новости</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Договор публичной оферты</a></li>
+                </ul>
+            </div>
+            <div class="footer__social">
+                <p class="footer__social-title">Мы в социальных сетях:</p>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link" aria-label="Фейсбук">
+                            <img src="img/facebook.png" alt="Фейсбук">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link" aria-label="Фейсбук">
+                            <img src="img/google.png" alt="Гугул">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link" aria-label="Фейсбук">
+                            <img src="img/instagram.png" alt="Истаграм">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copyright">© Kazteleport, 2015. Все права защищены</p>
+            <div class="footer__developed">
+                <span class="footer__site">Создание сайта - </span>
+                <img class="footer__logo" src="img/layer-56.png" srcset="img/layer-56@2x.png 2x">
+            </div>
+        </div>
+    </div>
+    
+</footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

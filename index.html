@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+    <title>Дмитрий Малецкий - Сайт-портфолио</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+    <svg style="display: none;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <symbol id="email" fill="#fff" viewBox="0 0 512 512">
+            <path d="M228.5 22.2c-31.1 3.5-68.3 16.5-95.5 33.3-22 13.7-47.2 36.1-62.2 55.5-25.6 33.1-41.7 71.2-48 113.5-2 13.6-1.7 51.2.5 65.5C33.6 356.5 70.4 414.5 126 451.6c28.7 19.1 62.3 32 96.6 37.1 16.4 2.4 50.4 2.4 66.8 0 41.1-6.1 81.5-23.7 113.6-49.4 45.9-36.8 76.4-89.7 85.7-148.5 2.5-15.9 2.5-53.7 0-69.6-8.3-52.4-32.9-99.5-70.8-135.6-37-35.2-86.1-58.1-136.1-63.5-11.4-1.3-41.9-1.2-53.3.1zM407 141.9c0 .5-1.8 2.4-3.9 4.3-7.8 6.6-64.1 58.5-67.6 62.2-1.8 1.9-32.2 30.2-56.7 52.7-11.7 10.8-16.7 13.9-22.6 13.9-7.8 0-8.1-.2-49.6-38.4-8.3-7.6-19.1-17.8-24.1-22.5-16.1-15.5-64.7-60.3-73.6-67.9-2.1-1.9-3.9-3.8-3.9-4.3s60.1-.9 151-.9 151 .4 151 .9zm-269 54.3c15.1 13.8 33.1 30.5 40 37l12.4 11.8-3.9 3.9c-2.2 2.1-21.8 20.2-43.5 40.1-21.7 20-43.1 39.8-47.5 44-4.4 4.3-9.9 9.4-12.2 11.5l-4.3 3.7v-97.1c0-99.4 0-99 3.8-103.3 1.4-1.6 2.4-.8 14.6 10.7 7.2 6.8 25.5 23.8 40.6 37.7zm293.2-45.1c1.7 3.2 1.8 10 1.8 100.3v96.8l-6.4-5.8C412 329 336 258.1 329.5 251.8l-7-6.9 9.6-9.2c5.2-5.1 23.9-22.3 41.4-38.2 17.6-16 36.9-33.8 43-39.7 6-5.9 11.5-10.6 12-10.5.6.2 1.8 1.9 2.7 3.8zm-211.7 120c20.1 18.8 23 20.4 37 20.4 14.3 0 17.1-1.5 36.7-19.9 8.7-8.1 16.2-14.6 16.7-14.4.6.1 7.9 6.9 16.3 14.9s28.4 26.6 44.3 41.3c42.7 39.4 56 52 56 53.1 0 .5-1.6 1.8-3.5 2.8-3.3 1.6-12.9 1.7-168 1.5-163.2-.3-164.5-.3-167.7-2.3l-3.2-2 15.7-14.7c8.6-8 31-28.8 49.7-46.1 18.7-17.4 38.3-35.6 43.5-40.6 5.2-4.9 9.7-9 10-9 .3 0 7.7 6.7 16.5 15z"/>
+        </symbol>
+        <symbol id="github" fill="#fff" viewBox="0 0 440 430">
+            <path d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289 1.525-.859 4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136 6.28 0 11.704-.476 16.274-1.423 4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"></path>
+        </symbol>
+        <symbol id="telegram" fill="#fff" viewBox="0 0 512 512">
+            <path d="M470.435 45.423L16.827 221.249c-18.254 8.188-24.428 24.585-4.412 33.484l116.37 37.173 281.368-174.79c15.363-10.973 31.091-8.047 17.557 4.024L186.053 341.075l-7.591 93.076c7.031 14.371 19.905 14.438 28.117 7.295l66.858-63.589 114.505 86.187c26.595 15.826 41.066 5.613 46.788-23.394l75.105-357.47c7.798-35.705-5.5-51.437-39.4-37.757z"></path>
+        </symbol>
+        <symbol id="whatsapp" fill="#fff" viewBox="0 0 90 90">
+            <path d="M90 43.841c0 24.213-19.779 43.841-44.182 43.841a44.256 44.256 0 01-21.357-5.455L0 90l7.975-23.522a43.38 43.38 0 01-6.34-22.637C1.635 19.628 21.416 0 45.818 0 70.223 0 90 19.628 90 43.841zM45.818 6.982c-20.484 0-37.146 16.535-37.146 36.859 0 8.065 2.629 15.534 7.076 21.61L11.107 79.14l14.275-4.537A37.122 37.122 0 0045.819 80.7c20.481 0 37.146-16.533 37.146-36.857S66.301 6.982 45.818 6.982zm22.311 46.956c-.273-.447-.994-.717-2.076-1.254-1.084-.537-6.41-3.138-7.4-3.495-.993-.358-1.717-.538-2.438.537-.721 1.076-2.797 3.495-3.43 4.212-.632.719-1.263.809-2.347.271-1.082-.537-4.571-1.673-8.708-5.333-3.219-2.848-5.393-6.364-6.025-7.441-.631-1.075-.066-1.656.475-2.191.488-.482 1.084-1.255 1.625-1.882.543-.628.723-1.075 1.082-1.793.363-.717.182-1.344-.09-1.883-.27-.537-2.438-5.825-3.34-7.977-.902-2.15-1.803-1.792-2.436-1.792-.631 0-1.354-.09-2.076-.09s-1.896.269-2.889 1.344c-.992 1.076-3.789 3.676-3.789 8.963 0 5.288 3.879 10.397 4.422 11.113.541.716 7.49 11.92 18.5 16.223C58.2 65.771 58.2 64.336 60.186 64.156c1.984-.179 6.406-2.599 7.312-5.107.9-2.512.9-4.663.631-5.111z"></path>
+        </symbol>
+    </svg>
+    <h1 class="visually-hidden">Сайт-портфолио Дмитрия Малецкого</h1>
+    <aside class="page__aside aside">
+        <img class="aside__photo" src="img/portfolio.jpg" width="200" height="200" alt="Фотография Дмитрия">
+        <b>Привет!<br> Меня зовут Дмитрий.</b>
+        <p>Я начинающй Frontend-разработчик</p>
+        <p>Мои контакты:</p>
+        <ul class="aside__contacts">
+            <li class="aside__item">
+                <a class="aside__link aside__link--email" href="mailto:mltsk94@gmail.com" aria-label="email">
+                    <svg width="30" height="30"><use xlink:href="#email"></use></svg>
+                </a>
+            </li>
+            <li class="aside__item">
+                <a class="aside__link aside__link--whatsapp" href="https://wa.me/79811642937" aria-label="whatsapp">
+                    <svg width="30" height="30"><use xlink:href="#whatsapp"></use></svg>
+                </a>
+            </li>
+            <li class="aside__item">
+                <a class="aside__link aside__link--telegram" href="https://t.me/mltsk" aria-label="telegram">
+                    <svg width="30" height="30"><use xlink:href="#telegram"></use></svg>
+                </a>
+            </li>
+            <li class="aside__item">
+                <a class="aside__link aside__link--github" href="https://github.com/mltsk" aria-label="github">
+                    <svg width="30" height="30"><use xlink:href="#github"></use></svg>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <div class="page__wrapper">
+        <header class="page__header header">
+            <ul class="header__list">
+                <li class="header__item header__item--active">Портфолио.</li>
+                <li class="header__item">Резюме</li>
+            </ul>
+        </header>
+        <main class="page__main">
+            <section class="page__portfolio fade portfolio">
+                <h2 class="portfolio__main-title">Последние работы:</h2>
+                <div class="portfolio__wrapper">
+                    <ul class="portfolio__list">
+                        <li class="portfolio__item">
+                            <div class="portfolio__image-wrapper">
+                                <img class="portfolio__image" src="img/project-7.jpg" alt="23 Degree">
+                            </div>
+                            <h3 class="portfolio__title">23 Degree</h3>
+                            <p class="portfolio__info">HTML5, БЭМ, CSS3(Flex), SCSS, JS, Gulp, Адаптив, Резина, Кроссбраузерность</p>
+                            <div class="portfolio__btns">
+                                <a class="portfolio__btn portfolio__btn--site btn" href="23degree/index.html">Открыть сайт</a>
+                                <a class="portfolio__btn portfolio__btn--source btn" href="https://github.com/mltsk/23degree">Исходник</a>
+                            </div>
+                        </li>
+                        <li class="portfolio__item">
+                            <div class="portfolio__image-wrapper">
+                                <img class="portfolio__image" src="img/project-6.jpg" alt="Miushi - Заказать японскую еду">
+                            </div>
+                            <h3 class="portfolio__title">Miushi - Заказать японскую еду</h3>
+                            <p class="portfolio__info">HTML5, БЭМ, CSS3(Flex), SCSS, JS, jQuery, Slick.js, Gulp, Retina, Адаптив, Резина, Кроссбраузерность</p>
+                            <div class="portfolio__btns">
+                                <a class="portfolio__btn portfolio__btn--site btn" href="miushi/index.html">Открыть сайт</a>
+                                <a class="portfolio__btn portfolio__btn--source btn" href="https://github.com/mltsk/miushi">Исходник</a>
+                            </div>
+                        </li>
+                        <li class="portfolio__item">
+                            <div class="portfolio__image-wrapper">
+                                <img class="portfolio__image" src="img/project-5.jpg" alt="Авиасалес - поиск билетов">
+                            </div>
+                            
+                            <h3 class="portfolio__title">Авиасалес - поиск билетов</h3>
+                            <p class="portfolio__info">Vanilla JS, API</p>
+                            <div class="portfolio__btns">
+                                <a class="portfolio__btn portfolio__btn--site btn" href="aviasales/index.html">Открыть сайт</a>
+                                <a class="portfolio__btn portfolio__btn--source btn" href="https://github.com/mltsk/aviasales">Исходник</a>
+                            </div>
+                        </li>
+                        <li class="portfolio__item">
+                            <div class="portfolio__image-wrapper">
+                                <img class="portfolio__image" src="img/project-4.jpg" alt="Go Surf - лэндинг о серфинге">
+                            </div>
+                            
+                            <h3 class="portfolio__title">Go Surf - лэндинг о серфинге</h3>
+                            <p class="portfolio__info">HTML5, БЭМ, CSS3(Flex), SCSS, JS, jQuery, Slick.js, Gulp, Адаптив, Резина, Кроссбраузерность</p>
+                            <div class="portfolio__btns">
+                                <a class="portfolio__btn portfolio__btn--site btn" href="go-surf/index.html">Открыть сайт</a>
+                                <a class="portfolio__btn portfolio__btn--source btn" href="https://github.com/mltsk/go-surf">Исходник</a>
+                            </div>
+                        </li>
+                        <li class="portfolio__item">
+                            <div class="portfolio__image-wrapper">
+                                <img class="portfolio__image" src="img/project-3.jpg" alt="Yoga - туры в индию">
+                            </div>
+                            
+                            <h3 class="portfolio__title">Yoga - туры в индию</h3>
+                            <p class="portfolio__info">Vanilla JS, Табы, Таймер, Слайдер, Калькулятор</p>
+                            <div class="portfolio__btns">
+                                <a class="portfolio__btn portfolio__btn--site btn" href="yoga/index.html">Открыть сайт</a>
+                                <a class="portfolio__btn portfolio__btn--source btn" href="https://github.com/mltsk/yoga">Исходник</a>
+                            </div>
+                        </li>
+                        <li class="portfolio__item">
+                            <div class="portfolio__image-wrapper">
+                                <img class="portfolio__image" src="img/project-2.jpg" alt="Pink - мобильное приложение">
+                            </div>
+                            
+                            <h3 class="portfolio__title">Pink - мобильное приложение</h3>
+                            <p class="portfolio__info">HTML5, БЭМ, CSS3(Flex), SCSS, Gulp, Адаптив, Кроссбраузерность, 3 страницы</p>
+                            <div class="portfolio__btns">
+                                <a class="portfolio__btn portfolio__btn--site btn" href="pink/index.html">Открыть сайт</a>
+                                <a class="portfolio__btn portfolio__btn--source btn" href="https://github.com/mltsk/pink-site">Исходник</a>
+                            </div>
+                        </li>
+                        <li class="portfolio__item">
+                            <div class="portfolio__image-wrapper">
+                                <img class="portfolio__image" src="img/project-1.jpg" alt="Device - интернет магазин">
+                            </div>
+                            
+                            <h3 class="portfolio__title">Device - интернет магазин</h3>
+                            <p class="portfolio__info">HTML5, CSS3(Flex), Кроссбраузерность, 2 страницы</p>
+                            <div class="portfolio__btns">
+                                <a class="portfolio__btn portfolio__btn--site btn" href="device/index.html">Открыть сайт</a>
+                                <a class="portfolio__btn portfolio__btn--source btn" href="https://github.com/mltsk/device">Исходник</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="page__resume resume fade">
+                <h2 class="visually-hidden">Резюме</h2>
+                <div class="resume__wrapper">
+                    <h3 class="resume__header">Малецкий Дмитрий</h3> 
+                    <p class="resume__header">Санкт-Петербург</p>
+                    <a class="resume__header resume__link" href="tel:+79811642937">+79811642937</a><br>
+                    <a class="resume__header resume__link" href="mailto:mltsk94@gmail.com">mltsk94@gmail.com</a> 
+
+                    <h3>Профессиональные навыки:</h3>
+                    <ul>
+                        <li>Знаю HTML5, верстаю семантично с методологией БЭМ</li>
+                        <li>Владею CSS, верстаю на флексах, в работе использую препроцессор SCSS</li>
+                        <li>Использую Gulp. Знаю, как сделать сборку и где достать плагины</li>
+                        <li>Базовые знания Vanilla Javascript. Могу писать простые скрипты(табы, плавные скроллы, модальные окна, калькуляторы, таймеры). Есть опыт в поиске и модифицирование чужого кода.</li>
+                        <li>Использую jQuery при работе и настройки плагинов.</li>
+                        <li>Есть опыт работы с такими плагинами как: slick.js, magnific popup, wow.js</li>
+                        <li>Умею адаптировать сайт (фиксированно и резиново). Знаю, что такое mobile first и предпочитаю работать по этому методу.</li>
+                        <li>Также есть опыт верстки Desktop first, и адаптирование сайта под мобильные устройства без макета.</li>
+                        <li>Работал с Adobe Photoshop, Figma, Zeplin, Avocode. Могу быстро освоить и другой редактор</li>
+                        <li>Использую git и GitHub</li>
+                        <li>Всегда проверяю код на валидность и сайт на кроссбраузерность (до Internet Explorer 11)</li>
+                        <li>Думаю про доступность, использую прогрессивное улучшение</li>
+                        <li>Знаю английский, могу читать документацию и гуглить решения не только в рунете.</li>
+                    </ul>
+
+                    <h3>Образование:</h3>
+                    <p class="resume__education">2013 – 2018 <br>
+                    Факультет Навигации и связи<br>
+                    Инженер судоводитель<br>
+                    Государственный университет морского и речного флота имени адмирала С.О. Макарова<br>
+                    Специалист</p>
+
+
+                    <h3>О себе:</h3> 
+                    <p class="resume__about">Постоянно обучаюсь самостоятельно и совершенствую свои знания: обучающие видео, YouTube, статьи, подкасты, чаты, общение с опытными специалистами.</p>
+                    <p class="resume__about">Усидчивый, ответственный, всегда на связи. Готов освоить необходимые технологии и инструменты, которые потребуются именно в вашей команде.</p>
+                    <p class="resume__about">Прошёл курсы по вёрстке, данный момент прохожу профессию 'Фронтенд-программист' на Хекслете. Есть огромное желание стать частью команды. Заинтересован в профессиональном развитии.</p>
+            
+                    <a class="resume__btn btn" href="Малецкий Дмитрий.pdf" download>Скачать резюме</a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

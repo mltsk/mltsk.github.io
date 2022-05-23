@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pink - Конкурс</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.min.css">
+    </head>
+<body class="page-form">
+    <header class="page-header header">
+        <div class="header__wrapper ">
+            <nav class="main-nav main-nav--close">
+                <div class="main-nav__wrapper">
+                    <a href="/index.html" class="main-nav__logo logo">
+                        <svg role="img" width="74" height="22" class="main-nav__logo--mobile">
+                            <use xlink:href="svg/sprite.svg#logo-mobile"></use>
+                        </svg>
+                        <svg role="img" width="146" height="40" class="main-nav__logo--table">
+                            <use xlink:href="svg/sprite.svg#logo-table"></use>
+                        </svg>
+                        <svg role="img" width="148" height="40" class="main-nav__logo--desktop">
+                            <use xlink:href="svg/sprite.svg#logo-desktop"></use>
+                        </svg>
+                    </a>
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item"><a href="index.html">Главная</a></li>
+                        <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+                        <li class="main-nav__item"><a>Конкурс</a></li>
+                        <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+                    </ul>
+                <button class="main-nav__taggle" aria-label="Развернуть/спрятать меню"></button>   
+                </div>
+            </nav>
+            <section class="header-title">
+                <h2 class="header-title__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+            </section>
+        </div>
+    </header> 
+    <main class="form-main">
+        <p class="form-main__slogan">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            <span class="form-main__slogan-span">Пожалуйста, заполните форму ниже:</span> 
+        </p>
+        <form class="form-main__form form" action="https://echo.htmlacadamy.ru" method="GET">
+            <fieldset class="form__full-name full-name">
+                <p class="full-name__item">
+                    <label class="full-name__label" for="full-name__surname">Фамилия:</label>
+                    <input class="full-name__input" id="full-name__surname" name="surname" type="text" placeholder="Укажите фамилию *">
+                </p>
+                <p class="full-name__item">
+                    <label class="full-name__label" for="full-name__name">Имя:</label>
+                    <input class="full-name__input" id="full-name__name" name="name" type="text" placeholder="Введите ваше имя *">
+                </p>
+                <p class="full-name__item">
+                    <label class="full-name__label" for="full-name__middle-name">Отчество:</label>
+                    <input class="full-name__input" id="full-name__middle-name" name="middle-name" type="text" placeholder="Ну и отчество тоже">
+                </p>
+            </fieldset>
+            <div class="form__wrapper achievements-wrapper">
+                <fieldset class="form__achievements achievements">
+                    <legend class="achievements__legend form__legend">
+                    Ваши безбашенные достижения в путешествии
+                </legend> 
+                <div class="achievements__wrapper">
+                    <p class="achievements__item">
+                        <input class="achievements__checkbox visually-hidden" id="achievements__selfi" name="selfi" type="checkbox">
+                        <label class="achievements__label" for="achievements__selfi">Сделал селфи с акулой</label>
+                    </p>
+                    <p class="achievements__item">
+                        <input class="achievements__checkbox visually-hidden" id="achievements__beach" name="beach" type="checkbox">
+                        <label class="achievements__label" for="achievements__beach">Обгорел на пляже</label>
+                    </p>
+                    <p class="achievements__item">
+                        <input class="achievements__checkbox visually-hidden" id="achievements__chuck-norris" name="chuck-norris" type="checkbox">
+                        <label class="achievements__label" for="achievements__chuck-norris">Видел Чака Нориса</label>
+                    </p>
+                    <p class="achievements__item">
+                        <input class="achievements__checkbox visually-hidden" id="achievements__suvenirs" name="suvenirs" type="checkbox">
+                        <label class="achievements__label" for="achievements__suvenirs">Накупил сувениров</label>
+                    </p>
+                    <p class="achievements__item">
+                        <input class="achievements__checkbox visually-hidden" id="achievements__tower" name="tower" type="checkbox">
+                        <label class="achievements__label" for="achievements__tower">Удержал башню</label>
+                    </p>
+                    <p class="achievements__item">
+                        <input class="achievements__checkbox visually-hidden" id="achievements__hotel" name="hotel" type="checkbox">
+                        <label class="achievements__label" for="achievements__hotel">Разгромил отель</label>
+                    </p>
+                </div>
+                </fieldset>
+            </div>
+            <fieldset class="form__user-contacts user-contacts">
+                <legend class="user-contacts__legend form__legend">
+                    Контактная информация
+                </legend>
+                <div class="user-contacts__wrapper">
+                    <p class="user-contacts__item">
+                        <label class="user-contacts__label" for="user-contacts__phone-number">Номер телефона</label>
+                        <input class="user-contacts__input" id="user-contacts__phone-number" name="phone-namber" type="text" placeholder="Номер пожалуйста">
+                    </p>
+                    <p class="user-contacts__item">
+                        <label class="user-contacts__label" for="user-contacts__email">Адрес почты</label>
+                        <input class="user-contacts__input" id="user-contacts__email" name="email" type="text" placeholder="Введите почту *">
+                    </p>
+                </div>
+            </fieldset>
+            <div class="form__wrapper os-wrapper">
+                <fieldset class="form__os os">
+                    <legend class="os__legend form__legend">
+                        С каким приложением путешествовали?
+                    </legend>
+                    <p class="os__item">
+                        <input class="os__input visually-hidden" id="os__ios" name="os" value="ios" type="radio">
+                        <label class="os__label" for="os__ios">Pink для iOS</label>     
+                    </p>
+                    <p class="os__item">
+                        <input class="os__input visually-hidden" id="os__android" name="os" value="android" type="radio" checked>
+                        <label class="os__label" for="os__android">Pink на Android</label>     
+                    </p>
+                    <p class="os__item">
+                        <input class="os__input visually-hidden" id="os__windows" name="os" value="windows" type="radio">
+                        <label class="os__label" for="os__windows">Windows Phone</label>     
+                    </p>
+                </fieldset>
+            </div>
+            <fieldset class="form__emotions emotions">
+                <legend class="emotions__legend form__legend">
+                    Опишите свои эмоции
+                </legend>
+                <div class="emotions__wrapper">
+                    <textarea class="emotions__textarea" name="emotions" id="emotions" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+                </div>    
+            </fieldset>
+            <div class="form__footer">
+                <button class="form__button button-form" type="submit">
+                    Отправить форму
+                </button>
+                <p class="form__footnote">
+                    <span class="form__star">*</span> — Обязательные <span class="form__footnote-center">для заполнения</span> поля
+                </p>
+            </div>
+        </form>
+    </main>
+    <footer class="page-footer container">
+        <a href="/index.html" class="page-footer__logo logo">
+            <svg class="page-footer__logo--table" role="img" width="146.3px" height="40.375px">
+                <use xlink:href="./svg/sprite.svg#logo-table-footer"></use>
+            </svg>
+            <svg class="page-footer__logo--desktop" role="img" width="148" height="40">
+                <use xlink:href="./svg/sprite.svg#logo-desktop-footer"></use>
+            </svg>
+        </a>
+        <ul class="page-footer__social social">
+            <li class="social-item social-item__twitter"><span class="visually-hidden">Твиттер</span></li>
+            <li class="social-item social-item__facebook"><span class="visually-hidden">Фейсбук</span></li>
+            <li class="social-item social-item__youtube"><span class="visually-hidden">Ютуб</span></li>
+        </ul>
+        <p class="page-footer__copyright copyright">
+            <span class="copyright__developed">Разработано</span>
+            <a href="https://htmlacadamy.ru">
+                <svg width="27" height="34" class="copyright__logo">
+                    <use xlink:href="svg/sprite.svg#logo-htmlacadamy"></use>
+                </svg>
+            </a>
+        </p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>
+        svg4everybody();
+    </script>
+</body>
+</html>
