@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ff4a18a4.css",
+    "main.js": "/static/js/main.c66cf93f.js",
+    "static/media/Geometria-Regular.woff": "/static/media/Geometria-Regular.8a7c9bf6c4fb69e13595.woff",
+    "static/media/Geometria-Medium.woff": "/static/media/Geometria-Medium.1b16651e7f4cc351074f.woff",
+    "static/media/Geometria-Regular.woff2": "/static/media/Geometria-Regular.914be1665d1d946c626c.woff2",
+    "static/media/Geometria-Medium.woff2": "/static/media/Geometria-Medium.8d57bf2f0682db5d7cb8.woff2",
+    "index.html": "/index.html",
+    "main.ff4a18a4.css.map": "/static/css/main.ff4a18a4.css.map",
+    "main.c66cf93f.js.map": "/static/js/main.c66cf93f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff4a18a4.css",
+    "static/js/main.c66cf93f.js"
+  ]
+}
