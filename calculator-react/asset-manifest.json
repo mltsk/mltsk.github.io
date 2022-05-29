@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "./static/css/main.ac1ddfa9.css",
-    "main.js": "./static/js/main.c66cf93f.js",
+    "main.css": "./static/css/main.f034619d.css",
+    "main.js": "./static/js/main.f6100d26.js",
     "static/media/Geometria-Regular.woff": "./static/media/Geometria-Regular.8a7c9bf6c4fb69e13595.woff",
     "static/media/Geometria-Medium.woff": "./static/media/Geometria-Medium.1b16651e7f4cc351074f.woff",
     "static/media/Geometria-Regular.woff2": "./static/media/Geometria-Regular.914be1665d1d946c626c.woff2",
     "static/media/Geometria-Medium.woff2": "./static/media/Geometria-Medium.8d57bf2f0682db5d7cb8.woff2",
     "index.html": "./index.html",
-    "main.ac1ddfa9.css.map": "./static/css/main.ac1ddfa9.css.map",
-    "main.c66cf93f.js.map": "./static/js/main.c66cf93f.js.map"
+    "main.f034619d.css.map": "./static/css/main.f034619d.css.map",
+    "main.f6100d26.js.map": "./static/js/main.f6100d26.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac1ddfa9.css",
-    "static/js/main.c66cf93f.js"
+    "static/css/main.f034619d.css",
+    "static/js/main.f6100d26.js"
   ]
 }
